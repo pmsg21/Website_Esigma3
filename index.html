@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Electrónica SIGMA 3 C.A.</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/layout.css">
+    <link href="css/multi-screen-css.css" type="text/css" rel="stylesheet" />
+    <link rel="icon" href="img/iconos/favicom_sigma-01.png" type="image/png">
+     <script src="js/jquery.min.js"></script> 
+<!--    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>-->
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/slick.js"></script>
+    <script type="text/javascript" src="js/multi-screen.js"></script>
+    <script src="js/efectos.js"></script>
+    <script type="text/javascript">
+    //Portfolio Filter
+    $(function () {
+
+            var filterList = {
+
+                init: function () {
+                    // MixItUp plugin
+                    // http://mixitup.io
+                    $('#portfoliolist').mixItUp({
+                    selectors: {
+                      target: '.portfolio',
+                      filter: '.filter'	
+                  },
+                  load: {
+                  filter: '.ControlDeAcceso'  
+                }     
+                    });								
+
+                }
+
+            };
+
+            // Run the show!
+            filterList.init();
+
+
+        });	
+    </script>
+<body>
+   <div class="loading-css">
+        <img src="img/GIF-SIGMA.gif" alt="GIF" class="img-responsive gif-sigma">   
+    </div>
+    <div class="body-show">
+        <div class="ms-container" id="pre-inicio">
+               <header>
+                    <nav class="nav-absolute visible-lg visible-md visible">
+                        <div class="row">
+                            <div class="col-lg-10 col-lg-offset-1">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="row">
+                                            <div class="col-md-10 col-md-offset-1"> 
+                                                <img class="ms-nav-link img-nav" data-ms-target="pre-inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top" src="img/iconos/Logo_sigma-01.png" alt="Logo Empresa">
+                                            </div>   
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 centro cl-effect-3">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="#inicio" class="ms-nav-link" data-ms-target="inicio" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Inicio</a></li>
+                                            <li class="dropdown">
+                                                <a href="javascript:void(0)" onmouseover="showCaret()" onmouseout="hideCaret()" class="ms-nav-link dropdown-toogle" data-toggle="dropdown">Empresa<span id="caret" class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#empresa" class="ms-nav-link" data-ms-target="empresa" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Misión/Visión</a></li>
+                                                    <li><a href="#clientes" class="ms-nav-link" data-ms-target="clientes" data-ms-exit-animation="topleft" data-ms-enter-animation="bottomright">Clientes</a></li>
+                                                </ul>    
+                                            </li>
+                                            <li><a href="#productos" class="ms-nav-link" data-ms-target="productos" data-ms-exit-animation="top" data-ms-enter-animation="bottom" onclick="ShowProductos()">Productos</a></li>
+                                            <li><a href="#servicios" class="ms-nav-link" data-ms-target="servicios" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Servicios</a></li>
+                                            <li><a href="#contacto" class="ms-nav-link" data-ms-target="contacto" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Contacto</a></li>  
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-2 iconos centro-iconos">
+                                        <a href="https://www.facebook.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/FB-01.svg" alt="Logo Facebook"></a>
+                                        <a href="https://www.twitter.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/TW-01.svg" alt="Logo Twitter"></a>
+                                        <a href="https://www.instagram.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/INSTAGRAM-01.svg" alt="Logo Instagram"></a>                    
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </nav>  
+                    <div class="nav-absolute-phone visible-xs">
+                        <span class="sidenav-open fa fa-align-right" onclick="openNav0()"></span>
+                        <div id="mySidenav0" class="sidenav-responsive">    
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav0()">&times;</a>
+                            <img class="ms-nav-link img-nav sidenav-top" data-ms-target="pre-inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top" src="img/iconos/Logo_sigma2-01.png" alt="Logo Empresa" onclick="closeNav0()">
+                            <a class="ms-nav-link" data-ms-target="inicio" data-ms-exit-animation="top" data-ms-enter-animation="bottom" onclick="closeNav0()" href="#inicio">Inicio</a>
+                            <a href="javascript:void(0)" id="LinkEmpresa1" onmouseover="showCaret()" onmouseout="hideCaret()" class="ms-nav-link dropdown-toogle" data-toggle="dropdown">Empresa<span id="caret" class="caret"></span></a>
+                            <div id="DropdownEmpresa1" class="DropdownMenu">
+                                <a href="#empresa" class="ms-nav-link" data-ms-target="empresa" data-ms-exit-animation="top" data-ms-enter-animation="bottom" onclick="closeNav0()">Misión/Visión</a>
+                                <a href="#clientes" class="ms-nav-link" data-ms-target="clientes" data-ms-exit-animation="topleft" data-ms-enter-animation="bottomright" onclick="closeNav0()">Clientes</a>
+                            </div>
+                            <a class="ms-nav-link" onclick="closeNav0()" href="#productos" data-ms-target="productos" data-ms-exit-animation="top" data-ms-enter-animation="bottom" onclick="document.getElementById('productos').style.visibility = 'visible'">Productos</a>
+                            <a class="ms-nav-link" onclick="closeNav0()" href="#servicios" data-ms-target="servicios" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Servicios</a>
+                            <a class="ms-nav-link" onclick="closeNav0()" href="#contacto" data-ms-target="contacto" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Contacto</a>
+                        </div>    
+                    </div> 
+                </header>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img class="img-responsive" src="img/banners/BANNERS%201.jpg" alt="Banner 1">
+                            <div class="carousel-caption">
+                                <div class="triangle"></div>
+                                <h1 class="caption-margin">Copy Principal Max 4 Palabras</h1>
+                                <div class="fancy visible-md visible-lg visible-sm"><span></span><span class="span"></span><span class="central"></span></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="img/banners/BANNERS%202.jpg" alt="Banner 2">
+                            <div class="carousel-caption">
+                                <div class="triangle"></div>
+                                <h1 class="caption-margin">Copy Principal Max 4 Palabras</h1>
+                                <div class="fancy visible-md visible-lg visible-sm"><span></span><span class="span"></span><span class="central"></span></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="img/banners/BANNERS%203.jpg" alt="Banner 3">
+                            <div class="carousel-caption">
+                                <div class="triangle"></div>
+                                <h1 class="caption-margin">Copy Principal Max 4 Palabras</h1>
+                                <div class="fancy visible-md visible-lg visible-sm"><span></span><span class="span"></span><span class="central"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        <div class="ms-container" id="inicio">
+            <nav class="nav-background" id="Inicio">
+                <div class="row nav-escritorio visible-sm visible-md visible-lg">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1"> 
+                                        <img class="ms-nav-link img-nav" data-ms-target="pre-inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top" src="img/iconos/Logo_sigma2-01.png" alt="Logo Empresa">
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="col-md-8 centro cl-effect-3">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#inicio" class="ms-nav-link activo">Inicio</a></li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0)" onmouseover="showCaret2()" onmouseout="hideCaret2()" class="ms-nav-link dropdown-toogle" data-toggle="dropdown">Empresa<span id="caret2" class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#empresa" class="ms-nav-link" data-ms-target="empresa" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Misión/Visión</a></li>
+                                            <li><a href="#clientes" class="ms-nav-link" data-ms-target="clientes" data-ms-exit-animation="topleft" data-ms-enter-animation="bottomright">Clientes</a></li>
+                                        </ul>    
+                                    </li>
+                                    <li><a href="#productos" class="ms-nav-link" data-ms-target="productos" data-ms-exit-animation="top" data-ms-enter-animation="bottom" onclick="ShowProductos()">Productos</a></li>
+                                    <li><a href="#servicios" class="ms-nav-link" data-ms-target="servicios" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Servicios</a></li>
+                                    <li><a href="#contacto" class="ms-nav-link" data-ms-target="contacto" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Contacto</a></li>  
+                                </ul>
+                            </div>
+                            <div class="col-md-2 iconos centro-iconos">
+                                <a href="https://www.facebook.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/FB-01.svg" alt="Logo Facebook"></a>
+                                <a href="https://www.twitter.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/TW-01.svg" alt="Logo Twitter"></a>
+                                <a href="https://www.instagram.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/INSTAGRAM-01.svg" alt="Logo Instagram"></a>                    
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <div class="nav-phone">
+                    <span class="sidenav-open fa fa-align-right" onclick="openNav()"></span>
+                    <div id="mySidenav" class="sidenav-responsive">    
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <img class="ms-nav-link img-nav sidenav-top" data-ms-target="pre-inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top" src="img/iconos/Logo_sigma2-01.png" alt="Logo Empresa" onclick="closeNav()">
+                        <a class="ms-nav-link" onclick="closeNav()" href="#inicio"><span class="activo">Inicio</span></a>
+                        <a href="javascript:void(0)" id="LinkEmpresa2" onmouseover="showCaret()" onmouseout="hideCaret()" class="ms-nav-link dropdown-toogle" data-toggle="dropdown">Empresa<span id="caret" class="caret"></span></a>
+                            <div id="DropdownEmpresa2" class="DropdownMenu">
+                                <a href="#empresa" class="ms-nav-link" data-ms-target="empresa" data-ms-exit-animation="top" data-ms-enter-animation="bottom" onclick="closeNav()">Misión/Visión</a>
+                                <a href="#clientes" class="ms-nav-link" data-ms-target="clientes" data-ms-exit-animation="topleft" data-ms-enter-animation="bottomright" onclick="closeNav()">Clientes</a>
+                            </div>
+                        <a class="ms-nav-link" onclick="closeNav()" href="#productos" data-ms-target="productos" data-ms-exit-animation="top" data-ms-enter-animation="bottom" onclick="document.getElementById('productos').style.visibility = 'visible'">Productos</a>
+                        <a class="ms-nav-link" onclick="closeNav()" href="#servicios" data-ms-target="servicios" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Servicios</a>
+                        <a class="ms-nav-link" onclick="closeNav()" href="#contacto" data-ms-target="contacto" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Contacto</a>
+                    </div>    
+                </div>
+            </nav>
+            <div class="animate">
+                <div class="row">
+                    <div class="col-md-12 img-inicio">
+                        <img src="img/imagen%20inicio.png" class="img-responsive img-subtitulo" alt="">
+                    </div>
+                </div>
+                <div class="row bg-inicio">
+                    <div class="col-md-12">
+                        <h3 class="subtitulo"><span>Eficiencia, Profesionalismo y calidad de servicio</span></h3>
+                        <div class="fancy visible-md visible-lg visible-sm"><span></span><span class="span"></span><span class="central"></span></div>
+                    </div>
+                    <div class="col-md-12 subtitulo-margen">
+                        <h3 class="subtitulo-blanco">Electrónica Sigma 3 C.A</h3>
+                    </div>
+                    <div class="col-md-12 margen-texto visible-md visible-lg visible-sm">
+                        <p class="texto">Es una empresa Venezolana cuyo objetivo y compromiso es proporcionar las Herramientas Tecnológicas indispensables,</p>
+                        <p class="texto">para cubrir las necesidades de Seguridad Patrimonial de nuestros clientes, basados siempre en el principio de Calidad de Servicio.</p>
+                        <p class="texto">Nos especializamos en Sistemas Electrónicos de seguridad; Control de Acceso, Control de Tiempo y Asistencia,</p>
+                        <p class="texto">Circuito Cerrado de Televisión CCTV, Detección y Alarmas y Detección de Incendios.</p>
+                    </div>
+                    <div class="col-md-12 margen-texto visible-xs">
+                        <p class="texto">Es una empresa Venezolana cuyo objetivo y compromiso es proporcionar las Herramientas Tecnológicas indispensables, para cubrir las necesidades de Seguridad Patrimonial de nuestros clientes, basados siempre en el principio de Calidad de Servicio.</p>
+                        <p class="texto">Nos especializamos en Sistemas Electrónicos de seguridad; Control de Acceso, Control de Tiempo y Asistencia, Circuito Cerrado de Televisión CCTV, Detección y Alarmas y Detección de Incendios.</p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="ms-container" id="empresa">
+            <nav class="nav-background">
+                <div class="row nav-escritorio visible-sm visible-md visible-lg">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1"> 
+                                        <img class="ms-nav-link img-nav" data-ms-target="pre-inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top" src="img/iconos/Logo_sigma2-01.png" alt="Logo Empresa">
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="col-md-8 centro cl-effect-3">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#inicio" class="ms-nav-link" data-ms-target="inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top">Inicio</a></li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0)" onmouseover="showCaret3()" onmouseout="hideCaret3()" class="ms-nav-link dropdown-toogle activo" data-toggle="dropdown">Empresa<span id="caret3" class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#empresa" class="ms-nav-link activo">Misión/Visión</a></li>
+                                            <li><a href="#clientes" class="ms-nav-link" data-ms-target="clientes" data-ms-exit-animation="left" data-ms-enter-animation="right">Clientes</a></li>
+                                        </ul>    
+                                    </li>
+                                    <li><a href="#productos" class="ms-nav-link" data-ms-target="productos" data-ms-exit-animation="top" data-ms-enter-animation="bottom" onclick="ShowProductos()">Productos</a></li>
+                                    <li><a href="#servicios" class="ms-nav-link" data-ms-target="servicios" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Servicios</a></li>
+                                    <li><a href="#contacto" class="ms-nav-link" data-ms-target="contacto" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Contacto</a></li>  
+                                </ul>
+                            </div>
+                            <div class="col-md-2 iconos centro-iconos">
+                                <a href="https://www.facebook.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/FB-01.svg" alt="Logo Facebook"></a>
+                                <a href="https://www.twitter.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/TW-01.svg" alt="Logo Twitter"></a>
+                                <a href="https://www.instagram.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/INSTAGRAM-01.svg" alt="Logo Instagram"></a>                    
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <div class="nav-phone">
+                    <span class="sidenav-open2 fa fa-align-right" onclick="openNav2()"></span>
+                    <div id="mySidenav2" class="sidenav-responsive2">    
+                        <a href="javascript:void(0)" class="closebtn2" onclick="closeNav2()">&times;</a>
+                        <img class="ms-nav-link img-nav sidenav-top2" data-ms-target="pre-inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top" src="img/iconos/Logo_sigma2-01.png" alt="Logo Empresa" onclick="closeNav2()">
+                        <a onclick="closeNav2()" class="ms-nav-link" href="#inicio" data-ms-target="inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top">Inicio</a>
+                        <a onclick="closeNav2()" class="ms-nav-link" href="#empresa"><span class="activo">Empresa</span></a>
+                        <a onclick="closeNav2()" class="ms-nav-link" href="#productos" data-ms-target="productos" data-ms-exit-animation="top" data-ms-enter-animation="bottom" onclick="document.getElementById('productos').style.visibility = 'visible'">Productos</a>
+                        <a onclick="closeNav2()" class="ms-nav-link" href="#servicios" data-ms-target="servicios" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Servicios</a>
+                        <a onclick="closeNav2()" class="ms-nav-link" href="#contacto" data-ms-target="contacto" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Contacto</a>
+                    </div>    
+                </div>
+            </nav>
+            <div class="row mision-vision animate">
+                <div class="row empresa-superior">
+                    <div class="col-md-12">
+                        <img src="img/imagen%20empresas.png" class="img-responsive img-subtitulo" alt="">
+                    </div>
+                    <div class="col-md-12">
+                        <h3 class="subtitulo">"Somos la empresa que tiene como principio la calidad de servicio"</h3>
+                        <div class="fancy visible-md visible-lg visible-sm"><span></span><span class="span"></span><span class="central"></span></div>
+                    </div> 
+                </div>
+                <div class="col-md-6 vertical-padre mision">
+                    <div class="row vertical-hijo">
+                        <h3 class="subtitulo-blanco margin-mision"><img class="img-rotate" src="img/iconos/FLECHAS-01.svg" alt="Mision">Misión</h3>
+                        <div class="subtitulo-margen2 visible-lg">
+                            <p class="texto">Nuestra Misión es atender los requerimientos de Nuestros Clientes</p>
+                            <p class="texto">Orientados a los Sistemas Integrales de Seguridad Electrónica</p>
+                            <p class="texto">con el fin de satisfacer sus necesidades brindándoles la mayor confianza y</p>
+                            <p class="texto">seguridad basados en la Eficiencia, Profesionalismo y Calidad de Servicio.</p>
+                        </div>
+                        <div class="subtitulo-margen2 visible-md visible-sm">
+                            <p class="texto">Nuestra Misión es atender los requerimientos de Nuestros Clientes</p>
+                            <p class="texto">Orientados a los Sistemas Integrales de Seguridad Electrónica con el</p>
+                            <p class="texto">fin de satisfacer sus necesidades brindándoles la mayor confianza y</p> 
+                            <p class="texto">seguridad basados en la Eficiencia, Profesionalismo y Calidad de</p> 
+                            <p class="texto">Servicio.</p>
+                        </div>
+                        <div class="subtitulo-margen2 visible-xs">
+                            <p class="texto">Nuestra Misión es atender los requerimientos de Nuestros Clientes Orientados a los Sistemas Integrales de Seguridad Electrónica con el fin de satisfacer sus necesidades brindándoles la mayor confianza y seguridad basados en la Eficiencia, Profesionalismo y Calidad de Servicio.</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-6 vertical-padre vision">
+                    <div class="row vertical-hijo">
+                        <h3 class="subtitulo-blanco margin-vision"><img class="img-rotate" src="img/iconos/FLECHAS-01.svg" alt="Vision">Visión</h3>
+                        <div class="subtitulo-margen2 visible-lg visible-md visible-sm">
+                            <p class="texto">Ser una Empresa Líder en Calidad de Servicio en el mercado nacional</p>
+                            <p class="texto">de los Sistemas de Seguridad Electrónica</p>       
+                        </div>
+                        <div class="subtitulo-margen2 visible-xs">
+                            <p class="texto">Ser una Empresa Líder en Calidad de Servicio en el mercado nacional de los Sistemas de Seguridad Electrónica</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-empresa visible-lg visible-md">
+                    <img src="img/flecha.png" alt="Flecha">
+                </div>
+            </div>    
+        </div>
+        <div class="ms-container" id="clientes">
+            <nav class="nav-background">
+                <div class="row nav-escritorio visible-sm visible-md visible-lg">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1"> 
+                                        <img class="ms-nav-link img-nav" data-ms-target="pre-inicio" data-ms-exit-animation="bottomright" data-ms-enter-animation="topleft" src="img/iconos/Logo_sigma2-01.png" alt="Logo Empresa">
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="col-md-8 centro cl-effect-3">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#inicio" class="ms-nav-link" data-ms-target="inicio" data-ms-exit-animation="bottomright" data-ms-enter-animation="topleft">Inicio</a></li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0)" onmouseover="showCaret7()" onmouseout="hideCaret7()" class="ms-nav-link dropdown-toogle activo" data-toggle="dropdown">Empresa<span id="caret7" class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#empresa" class="ms-nav-link" data-ms-target="empresa" data-ms-exit-animation="right" data-ms-enter-animation="left">Misión/Visión</a></li>
+                                            <li><a href="#clientes" class="ms-nav-link activo">Clientes</a></li>
+                                        </ul>    
+                                    </li>
+                                    <li><a href="#productos" class="ms-nav-link" data-ms-target="productos" data-ms-exit-animation="topright" data-ms-enter-animation="bottomleft" onclick="ShowProductos()">Productos</a></li>
+                                    <li><a href="#servicios" class="ms-nav-link" data-ms-target="servicios" data-ms-exit-animation="topright" data-ms-enter-animation="bottomleft">Servicios</a></li>
+                                    <li><a href="#contacto" class="ms-nav-link" data-ms-target="contacto" data-ms-exit-animation="topright" data-ms-enter-animation="bottomleft">Contacto</a></li>  
+                                </ul>
+                            </div>
+                            <div class="col-md-2 iconos centro-iconos">
+                                <a href="https://www.facebook.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/FB-01.svg" alt="Logo Facebook"></a>
+                                <a href="https://www.twitter.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/TW-01.svg" alt="Logo Twitter"></a>
+                                <a href="https://www.instagram.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/INSTAGRAM-01.svg" alt="Logo Instagram"></a>                    
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <div class="nav-phone">
+                    <span class="sidenav-open2 fa fa-align-right" onclick="openNav2()"></span>
+                    <div id="mySidenav2" class="sidenav-responsive2">    
+                        <a href="javascript:void(0)" class="closebtn2" onclick="closeNav2()">&times;</a>
+                        <img class="ms-nav-link img-nav sidenav-top2" data-ms-target="pre-inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top" src="img/iconos/Logo_sigma2-01.png" alt="Logo Empresa" onclick="closeNav2()">
+                        <a onclick="closeNav2()" class="ms-nav-link" href="#inicio" data-ms-target="inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top">Inicio</a>
+                        <a onclick="closeNav2()" class="ms-nav-link" href="#empresa"><span class="activo">Empresa</span></a>
+                        <a onclick="closeNav2()" class="ms-nav-link" href="#productos" data-ms-target="productos" data-ms-exit-animation="top" data-ms-enter-animation="bottom" onclick="document.getElementById('productos').style.visibility = 'visible'">Productos</a>
+                        <a onclick="closeNav2()" class="ms-nav-link" href="#servicios" data-ms-target="servicios" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Servicios</a>
+                        <a onclick="closeNav2()" class="ms-nav-link" href="#contacto" data-ms-target="contacto" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Contacto</a>
+                    </div>    
+                </div>
+            </nav>
+            <div class="animate">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="subtitulo">Clientes</h1>
+                        <div class="fancy"><span class="clspan"></span><span class="clspan2"></span></div>
+                    </div> 
+                    <div class="col-md-12 margen-texto">
+                        <p class="texto">En Electrónica Sigma nos esforzamos por satisfacer las expectativas de nuestros clientes, adelantándonos </p>
+                        <p class="texto">constantemente a sus necesidades reales, para acompañarlos en la seguridad que ellos merecen.</p>
+                        <br>
+                        <p class="texto primary-color">Ellos han confiado en nosotros en pro de conseguir las soluciones tecnológicas que sus negocios requieren:</p>
+                    </div> 
+                </div>    
+                <section class="regular slider">
+                    <div>
+                      <img src="img/Clientes/activo.jpg" class="img-responsive">
+                    </div>
+                    <div>
+                      <img src="img/Clientes/banco_plaza.jpg" class="img-responsive">
+                    </div>
+                    <div>
+                      <img src="img/Clientes/bbs.jpg" class="img-responsive">
+                    </div>
+                    <div>
+                      <img src="img/Clientes/cancilleria_de_colombia.jpg" class="img-responsive">
+                    </div>
+                    <div>
+                      <img src="img/Clientes/dayco.jpg" class="img-responsive">
+                    </div>
+                    <div>
+                      <img src="img/Clientes/F.jpg" class="img-responsive">
+                    </div>
+                    <div>
+                      <img src="img/Clientes/kraft_foods.jpg" class="img-responsive">
+                    </div>
+                    <div>
+                      <img src="img/Clientes/ministerio_del_transporte.jpg" class="img-responsive">
+                    </div>
+                    <div>
+                      <img src="img/Clientes/parmalat.jpg" class="img-responsive">
+                    </div>
+                    <div>
+                      <img src="img/Clientes/sindoni.jpg" class="img-responsive">
+                    </div>
+                    <div>
+                      <img src="img/Clientes/Torre_Europa.jpg" class="img-responsive">
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="ms-container" id="productos">
+            <nav class="nav-background">
+                <div class="row nav-escritorio visible-sm visible-md visible-lg">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1"> 
+                                        <img class="ms-nav-link img-nav" data-ms-target="pre-inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top" src="img/iconos/Logo_sigma2-01.png" alt="Logo Empresa">
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="col-md-8 centro cl-effect-3">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#inicio" class="ms-nav-link" data-ms-target="inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top">Inicio</a></li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0)" onmouseover="showCaret4()" onmouseout="hideCaret4()" class="ms-nav-link dropdown-toogle" data-toggle="dropdown">Empresa<span id="caret4" class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#empresa" class="ms-nav-link" data-ms-target="empresa" data-ms-exit-animation="bottom" data-ms-enter-animation="top">Misión/Visión</a></li>
+                                            <li><a href="#clientes" class="ms-nav-link" data-ms-target="clientes" data-ms-exit-animation="bottomleft" data-ms-enter-animation="topright">Clientes</a></li>
+                                        </ul>    
+                                    </li>
+                                    <li><a href="#productos" class="ms-nav-link activo" onclick="ShowProductos()">Productos</a></li>
+                                    <li><a href="#servicios" class="ms-nav-link" data-ms-target="servicios" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Servicios</a></li>
+                                    <li><a href="#contacto" class="ms-nav-link" data-ms-target="contacto" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Contacto</a></li>  
+                                </ul>
+                            </div>
+                            <div class="col-md-2 iconos centro-iconos">
+                                <a href="https://www.facebook.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/FB-01.svg" alt="Logo Facebook"></a>
+                                <a href="https://www.twitter.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/TW-01.svg" alt="Logo Twitter"></a>
+                                <a href="https://www.instagram.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/INSTAGRAM-01.svg" alt="Logo Instagram"></a>                    
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <div class="nav-phone">
+                    <span class="sidenav-open3 fa fa-align-right" onclick="openNav3()"></span>
+                    <div id="mySidenav3" class="sidenav-responsive3">    
+                        <a href="javascript:void(0)" class="closebtn3" onclick="closeNav3()">&times;</a>
+                        <img class="ms-nav-link img-nav sidenav-top3" data-ms-target="pre-inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top" src="img/iconos/Logo_sigma2-01.png" alt="Logo Empresa" onclick="closeNav3()">
+                        <a onclick="closeNav3()" class="ms-nav-link" href="#inicio" data-ms-target="inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top">Inicio</a>
+                        <a onclick="closeNav3()" class="ms-nav-link" href="#empresa" data-ms-target="empresa" data-ms-exit-animation="bottom" data-ms-enter-animation="top">Empresa</a>
+                        <a onclick="closeNav3()" class="ms-nav-link" href="#productos"><span class="activo">Productos</span></a>
+                        <a onclick="closeNav3()" class="ms-nav-link" href="#servicios" data-ms-target="servicios" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Servicios</a>
+                        <a onclick="closeNav3()" class="ms-nav-link" href="#contacto" data-ms-target="contacto" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Contacto</a>
+                    </div>    
+                </div>
+            </nav>
+            <div class="animate">
+                <div class="row bg-productos">
+                    <div class="col-md-12">
+                        <h3 class="subtitulo">Amplia gama de productos</h3>
+                    </div>    
+                </div>
+                <div class="row">
+                    <div class="col-md-12 container-productos">
+                        <div class="container">
+                            <ul id="filters" class="clearfix">
+                                <li><span class="filter active" data-filter=".ControlDeAcceso">Control de Acceso</span></li>
+                                <li><span class="filter" data-filter=".CCTV">CCTV</span></li>
+                                <li><span class="filter" data-filter=".Alarma">Alarma</span></li>
+                                <li><span class="filter" data-filter=".SistemasContraIncedio">Sistemas Contra Incendio</span></li>
+                                <li><span class="filter" data-filter=".Marcas">Marcas</span></li>
+                            </ul>
+		                    <div id="portfoliolist">
+                                <!-- Sección de Control de Acceso-->
+                                <div class="portfolio ControlDeAcceso" data-cat="ControlDeAcceso">
+                                    <div class="portfolio-wrapper">			
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo AC225IP</span>
+                                                <span class="text-category">Marca ROSSLARE</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>	
+
+                                <div class="portfolio ControlDeAcceso" data-cat="ControlDeAcceso">
+                                    <div class="portfolio-wrapper">			
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo AC 425IP</span>
+                                                <span class="text-category">Marca ROSSLARE</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="portfolio ControlDeAcceso" data-cat="ControlDeAcceso">
+                                    <div class="portfolio-wrapper">
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo AC825IP</span>
+                                                <span class="text-category">Marca ROSSLARE</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Sección de Control de Acceso-->
+
+                                <!-- Sección de CCTV-->
+                                <div class="portfolio CCTV" data-cat="CCTV">
+                                    <div class="portfolio-wrapper">			
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo 1</span>
+                                                <span class="text-category">CCTV</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>	
+
+                                <div class="portfolio CCTV" data-cat="CCTV">
+                                    <div class="portfolio-wrapper">			
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo 2</span>
+                                                <span class="text-category">CCTV</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>	
+
+                                <div class="portfolio CCTV" data-cat="CCTV">
+                                    <div class="portfolio-wrapper">			
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo 3</span>
+                                                <span class="text-category">CCTV</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>	
+
+                                <div class="portfolio CCTV" data-cat="CCTV">
+                                    <div class="portfolio-wrapper">			
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo 4</span>
+                                                <span class="text-category">CCTV</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="portfolio CCTV" data-cat="CCTV">
+                                    <div class="portfolio-wrapper">			
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo 5</span>
+                                                <span class="text-category">CCTV</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>	
+                                <!-- Sección de CCTV-->
+
+                                <!-- Sección de Alarma-->
+                                <div class="portfolio Alarma" data-cat="Alarma">
+                                    <div class="portfolio-wrapper">			
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo 1</span>
+                                                <span class="text-category">Alarma</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="portfolio Alarma" data-cat="Alarma">
+                                    <div class="portfolio-wrapper">			
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo 2</span>
+                                                <span class="text-category">Alarma</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="portfolio Alarma" data-cat="Alarma">
+                                    <div class="portfolio-wrapper">
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo 3</span>
+                                                <span class="text-category">Alarma</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="portfolio Alarma" data-cat="Alarma">
+                                    <div class="portfolio-wrapper">						
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo 4</span>
+                                                <span class="text-category">Alarma</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="portfolio Alarma" data-cat="Alarma">
+                                    <div class="portfolio-wrapper">			
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo 5</span>
+                                                <span class="text-category">Alarma</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Sección de Alarma-->
+                                
+                                <!-- Sección de Sistemas contra Incendio-->
+                                <div class="portfolio SistemasContraIncedio" data-cat="SistemasContraIncedio">
+                                    <div class="portfolio-wrapper">				
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo 1</span>
+                                                <span class="text-category">Sistemas Contra Incendio</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>				
+
+                                <div class="portfolio SistemasContraIncedio" data-cat="SistemasContraIncedio">
+                                    <div class="portfolio-wrapper">			
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo 2</span>
+                                                <span class="text-category">Sistemas Contra Incendio</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>	
+
+                                <div class="portfolio SistemasContraIncedio" data-cat="SistemasContraIncedio">
+                                    <div class="portfolio-wrapper">			
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo 3</span>
+                                                <span class="text-category">Sistemas Contra Incendio</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>																	
+
+                                <div class="portfolio SistemasContraIncedio" data-cat="SistemasContraIncedio">
+                                    <div class="portfolio-wrapper">			
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo 4</span>
+                                                <span class="text-category">Sistemas Contra Incendio</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>													
+
+                                <div class="portfolio SistemasContraIncedio" data-cat="SistemasContraIncedio">
+                                    <div class="portfolio-wrapper">			
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo 5</span>
+                                                <span class="text-category">Sistemas Contra Incendio</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>																	
+
+                                <div class="portfolio SistemasContraIncedio" data-cat="SistemasContraIncedio">
+                                    <div class="portfolio-wrapper">			
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo 6</span>
+                                                <span class="text-category">Sistemas Contra Incendio</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>																										
+
+                                <div class="portfolio SistemasContraIncedio" data-cat="SistemasContraIncedio">
+                                    <div class="portfolio-wrapper">			
+                                        <img class="portfolio-image" src="img/Biometrico.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Modelo 7</span>
+                                                <span class="text-category">Sistemas Contra Incendio</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>				
+                                <!-- Sección de Sistemas contra Incendio-->
+
+                                <!-- Sección de Marcas-->
+                                <div class="portfolio Marcas" data-cat="Marcas">
+                                    <div class="portfolio-wrapper">						
+                                        <img class="portfolio-image" src="img/Marcas/ahua.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Ahua</span>
+                                                <span class="text-category">Marcas</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>	
+
+                                <div class="portfolio Marcas" data-cat="Marcas">
+                                    <div class="portfolio-wrapper">						
+                                        <img class="portfolio-image" src="img/Marcas/bosch.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Bosch</span>
+                                                <span class="text-category">Marcas</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>	
+
+                                <div class="portfolio Marcas" data-cat="Marcas">
+                                    <div class="portfolio-wrapper">						
+                                        <img class="portfolio-image" src="img/Marcas/came.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Came</span>
+                                                <span class="text-category">Marcas</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>	
+
+                                <div class="portfolio Marcas" data-cat="Marcas">
+                                    <div class="portfolio-wrapper">						
+                                        <img class="portfolio-image" src="img/Marcas/digicon.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Digicon</span>
+                                                <span class="text-category">Marcas</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>	
+
+                                <div class="portfolio Marcas" data-cat="Marcas">
+                                    <div class="portfolio-wrapper">						
+                                        <img class="portfolio-image" src="img/Marcas/ditec.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Ditec</span>
+                                                <span class="text-category">Marcas</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>	
+
+                                <div class="portfolio Marcas" data-cat="Marcas">
+                                    <div class="portfolio-wrapper">						
+                                        <img class="portfolio-image" src="img/Marcas/henry.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Henry</span>
+                                                <span class="text-category">Marcas</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>	
+
+                                <div class="portfolio Marcas" data-cat="Marcas">
+                                    <div class="portfolio-wrapper">						
+                                        <img class="portfolio-image" src="img/Marcas/hid.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Hid</span>
+                                                <span class="text-category">Marcas</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>	
+
+                                <div class="portfolio Marcas" data-cat="Marcas">
+                                    <div class="portfolio-wrapper">						
+                                        <img class="portfolio-image" src="img/Marcas/hikvision.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Hikvision</span>
+                                                <span class="text-category">Marcas</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>	
+
+                                <div class="portfolio Marcas" data-cat="Marcas">
+                                    <div class="portfolio-wrapper">						
+                                        <img class="portfolio-image" src="img/Marcas/rosslare.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Rosslare</span>
+                                                <span class="text-category">Marcas</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>	
+
+                                <div class="portfolio Marcas" data-cat="Marcas">
+                                    <div class="portfolio-wrapper">						
+                                        <img class="portfolio-image" src="img/Marcas/suprema.jpg" alt="" />
+                                        <div class="label">
+                                            <div class="label-text">
+                                                <span class="text-title">Suprema</span>
+                                                <span class="text-category">Marcas</span>
+                                            </div>
+                                            <div class="label-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>	
+                                <!-- Sección de Marcas-->
+			
+		                    </div>
+		
+	                    </div><!-- container -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ms-container" id="servicios">
+            <nav class="nav-background">
+                <div class="row nav-escritorio visible-sm visible-md visible-lg">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1"> 
+                                        <img class="ms-nav-link img-nav" data-ms-target="pre-inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top" src="img/iconos/Logo_sigma2-01.png" alt="Logo Empresa">
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="col-md-8 centro cl-effect-3">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#inicio" class="ms-nav-link" data-ms-target="inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top">Inicio</a></li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0)" onmouseover="showCaret5()" onmouseout="hideCaret5()" class="ms-nav-link dropdown-toogle" data-toggle="dropdown">Empresa<span id="caret5" class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#empresa" class="ms-nav-link" data-ms-target="empresa" data-ms-exit-animation="bottom" data-ms-enter-animation="top">Misión/Visión</a></li>
+                                            <li><a href="#clientes" class="ms-nav-link" data-ms-target="clientes" data-ms-exit-animation="bottomleft" data-ms-enter-animation="topright">Clientes</a></li>
+                                        </ul>    
+                                    </li>
+                                    <li><a href="#productos" class="ms-nav-link" data-ms-target="productos" data-ms-exit-animation="bottom" data-ms-enter-animation="top" onclick="ShowProductos()">Productos</a></li>
+                                    <li><a href="#servicios" class="ms-nav-link activo">Servicios</a></li>
+                                    <li><a href="#contacto" class="ms-nav-link" data-ms-target="contacto" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Contacto</a></li> 
+                                </ul>
+                            </div>
+                            <div class="col-md-2 iconos centro-iconos">
+                                <a href="https://www.facebook.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/FB-01.svg" alt="Logo Facebook"></a>
+                                <a href="https://www.twitter.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/TW-01.svg" alt="Logo Twitter"></a>
+                                <a href="https://www.instagram.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/INSTAGRAM-01.svg" alt="Logo Instagram"></a>                    
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <div class="nav-phone">
+                    <span class="sidenav-open4 fa fa-align-right" onclick="openNav4()"></span>
+                    <div id="mySidenav4" class="sidenav-responsive4">    
+                        <a href="javascript:void(0)" class="closebtn4" onclick="closeNav4()">&times;</a>
+                        <img class="ms-nav-link img-nav sidenav-top4" data-ms-target="pre-inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top" src="img/iconos/Logo_sigma2-01.png" alt="Logo Empresa" onclick="closeNav4()">
+                        <a class="ms-nav-link" onclick="closeNav4()" href="#inicio" data-ms-target="inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top">Inicio</a>
+                        <a class="ms-nav-link" onclick="closeNav4()" href="#empresa" data-ms-target="empresa" data-ms-exit-animation="bottom" data-ms-enter-animation="top">Empresa</a>
+                        <a class="ms-nav-link" onclick="closeNav4()" href="#productos" data-ms-target="productos" data-ms-exit-animation="bottom" data-ms-enter-animation="top" onclick="document.getElementById('productos').style.visibility = 'visible'">Productos</a>
+                        <a class="ms-nav-link" onclick="closeNav4()" href="#servicios"><span class="activo">Servicios</span></a>
+                        <a class="ms-nav-link" onclick="closeNav4()" href="#contacto" data-ms-target="contacto" data-ms-exit-animation="top" data-ms-enter-animation="bottom">Contacto</a>
+                    </div>    
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col-md-5 bg-servicios visible-sm visible-lg visible-md"></div>
+                <div class="col-md-7 animate">
+                    <div class="row container-servicios">
+                        <div class="col-md-12">
+                            <h3 class="subtitulo">Servicios</h3>
+                            <div class="fancy fancyS"><span class="sspan"></span><span class="sspan2"></span></div>
+                        </div>
+                        <div class="row iconos-margin">
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="col-md-3 col-xs-6">
+                                    <img class="servicios-center" src="img/iconos/icono%20instalacion.png" alt="Instalacion">
+                                    <h4 class="subtitulo-blanco">Instalación</h4>
+                                </div>
+                                <div class="col-md-3 col-xs-6">
+                                    <img class="servicios-center" src="img/iconos/icono%20mantenimiento.png" alt="Mantenimiento">
+                                    <h4 class="subtitulo-blanco">Mantenimiento</h4>
+                                </div>
+                                <div class="col-md-3 col-xs-6">
+                                    <img class="servicios-center" src="img/iconos/icono%20auditoria.png" alt="Auditoria">
+                                    <h4 class="subtitulo-blanco">Auditoría</h4>
+                                </div>
+                                <div class="col-md-3 col-xs-6">
+                                    <img class="servicios-center" src="img/iconos/icono%20planificacion-01.png" alt="Auditoria">
+                                    <h4 class="subtitulo-blanco">Planificación</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 servicios">
+                            <h4 class="subtitulo-blanco primary-color">Nuestros sectores de desempeño son:</h4>
+                            <ul class="lista-sin-deco">
+                                <li class="texto-blanco-justificado"><b class="primary-color">Ingeniería de Proyectos:</b> Contamos con el personal capacitado para la Proyección de Nuevas Instalaciones.</li><br>
+                                <li class="texto-blanco-justificado"><b class="primary-color">Soporte Técnico:</b> Ofrecemos el mejor Soporte Técnico en caso de fallas, la atención puede realizarse en Sitio, Soporte Telefónico o a Través de Conexión Remota. tenemos la Modalidad de “Contrato de Mantenimiento” para garantizar en un corto Tiempo la Atención correspondiente, planificación de Visitas recurrentes y/o garantía de Equipos.</li><br>
+                                <li class="texto-blanco-justificado"><b class="primary-color">Reactivación/ Actualización de Plataformas Existentes:</b> Si tiene alguna plataforma instalada por terceros y está inconforme con su funcionamiento y/o soporte Técnico el instalador, podremos evaluar estas plataformas, Ofrecer nuestras Recomendaciones, Reactivarlas para que estén operativas, Mejorar la instalación y luego Garantizarle el Soporte Técnico, a fin de que el cliente pueda utilizar y aprovechar las inversiones realizadas con anterioridad.</li>
+                            </ul>
+                            <ul class="lista-sin-deco">
+                                <li class="texto-blanco-justificado"><b class="primary-color">Electrónica Sigma 3 C.A. da respuesta a sus necesidades en las siguientes áreas:</b></li>
+                            </ul>
+                            <ul class="">
+                                <li class="texto-blanco-justificado">Sistemas de Control de Acceso</li>
+                                <li class="texto-blanco-justificado">Sistemas de Tiempo y Asistencia</li>
+                                <li class="texto-blanco-justificado">Sistemas de Circuito Cerrado de Televisión CCTV</li>
+                                <li class="texto-blanco-justificado">Sistemas de Detección de Intrusos y Alarma</li>
+                                <li class="texto-blanco-justificado">Sistemas de Detección de Incendios</li>
+                                <li class="texto-blanco-justificado">Desarrollo de Software complementarios:
+                                    <ul>
+                                        <li class="texto-blanco-justificado">Sistemas de Control de Visitantes</li>
+                                        <li class="texto-blanco-justificado">Sistemas de Control de Almacén</li>
+                                        <li class="texto-blanco-justificado">Sistemas de Conexión a Plataformas de Tiempo y Asistencia</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ms-container" id="contacto">
+            <nav class="nav-background">
+                <div class="row nav-escritorio visible-sm visible-md visible-lg">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1"> 
+                                        <img class="ms-nav-link img-nav" data-ms-target="pre-inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top" src="img/iconos/Logo_sigma2-01.png" alt="Logo Empresa">
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="col-md-8 centro cl-effect-3">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#inicio" class="ms-nav-link" data-ms-target="inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top">Inicio</a></li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0)" onmouseover="showCaret6()" onmouseout="hideCaret6()" class="ms-nav-link dropdown-toogle" data-toggle="dropdown">Empresa<span id="caret6" class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#empresa" class="ms-nav-link" data-ms-target="empresa" data-ms-exit-animation="bottom" data-ms-enter-animation="top">Misión/Visión</a></li>
+                                            <li><a href="#clientes" class="ms-nav-link" data-ms-target="clientes" data-ms-exit-animation="bottomleft" data-ms-enter-animation="topright">Clientes</a></li>
+                                        </ul>    
+                                    </li>
+                                    <li><a href="#productos" class="ms-nav-link" data-ms-target="productos" data-ms-exit-animation="bottom" data-ms-enter-animation="top" onclick="document.getElementById('productos').style.visibility = 'visible'">Productos</a></li>
+                                    <li><a href="#servicios" class="ms-nav-link" data-ms-target="servicios" data-ms-exit-animation="bottom" data-ms-enter-animation="top">Servicios</a></li>
+                                    <li><a href="#contacto" class="ms-nav-link activo">Contacto</a></li> 
+                                </ul>
+                            </div>
+                            <div class="col-md-2 iconos centro-iconos">
+                                <a href="https://www.facebook.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/FB-01.svg" alt="Logo Facebook"></a>
+                                <a href="https://www.twitter.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/TW-01.svg" alt="Logo Twitter"></a>
+                                <a href="https://www.instagram.com" target="_blank"><img class="img-responsive img-hover" src="img/iconos/INSTAGRAM-01.svg" alt="Logo Instagram"></a>                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-phone">
+                    <span class="sidenav-open5 fa fa-align-right" onclick="openNav5()"></span>
+                    <div id="mySidenav5" class="sidenav-responsive5">    
+                        <a href="javascript:void(0)" class="closebtn5" onclick="closeNav5()">&times;</a>
+                        <img class="ms-nav-link img-nav sidenav-top5" data-ms-target="pre-inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top" src="img/iconos/Logo_sigma2-01.png" alt="Logo Empresa" onclick="closeNav5()">
+                        <a class="ms-nav-link" onclick="closeNav5()" href="#inicio" data-ms-target="inicio" data-ms-exit-animation="bottom" data-ms-enter-animation="top">Inicio</a>
+                        <a class="ms-nav-link" onclick="closeNav5()" href="#empresa" data-ms-target="empresa" data-ms-exit-animation="bottom" data-ms-enter-animation="top">Empresa</a>
+                        <a class="ms-nav-link" onclick="closeNav5()" href="#productos" data-ms-target="productos" data-ms-exit-animation="bottom" data-ms-enter-animation="top" onclick="ShowProductos()">Productos</a>
+                        <a class="ms-nav-link" onclick="closeNav5()" href="#servicios" data-ms-target="servicios" data-ms-exit-animation="bottom" data-ms-enter-animation="top">Servicios</a>
+                        <a class="ms-nav-link" onclick="closeNav5()" href="#contacto"><span class="activo">Contacto</span></a>
+                    </div>    
+                </div>
+            </nav>
+            <div class="animate">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="img/imagen%20contacto.png" class="img-responsive img-subtitulo" alt="">
+                    </div>
+                    <div class="col-md-12">
+                        <h3 class="subtitulo-contacto"><b>Contacto</b></h3>
+                        <div class="fancy"><span class="cspan"></span><span class="cspan2"></span></div>
+                        <div class="contacto-escritorio">
+                            <p class="texto-blanco">Puede utilizar el Sistema de Contacto en nuestro Sitio Web. <br> Tenemos a su disposición diversos canales de comunicación, donde gustosamente le atenderemos. </p>
+                        </div>
+                        <div class="contacto-phone">
+                            <p class="texto-blanco">Puede utilizar el Sistema de Contacto en nuestro Sitio Web. Tenemos a su disposición siversos canales de comunicación, donde gustosamente le atenderemos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-2 col-xs-12">
+                                       <div class="row">
+                                           <div class="col-md-12">
+                                                <div class="texto-blanco-bold">Electrónica Sigma 3 C.A</div> 
+                                           </div>
+                                           <div class="col-md-12 contacto-margin">
+                                                <p class="texto-blanco">Info@esgima3.com <br> <b>Soporte Técnico</b> <br>soporte@esgima3.com </p>
+                                           </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12">
+                                       <div class="row">
+                                           <div class="col-md-12">
+                                               <div class="texto-blanco-bold">Ventas</div>
+                                           </div>
+                                           <div class="col-md-12 contacto-margin">
+                                               <p class="texto-blanco">ventas@esigma3.com</p>
+                                           </div>
+                                       </div> 
+                                    </div>   
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-5 col-md-offset-1 col-xs-12" style="margin-top:1%;">
+                               <div class="col-md-8 col-md-offset-2 col-xs-12 alineado-derecha">
+                                    <a class="contacto-btn" onclick="document.getElementById('id01').style.display='block'">Contáctanos</a>   
+                               </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 contenedor-contacto">
+                                <div class="row">
+                                    <div class="col-md-1 col-xs-1 img-scale"><img src="img/iconos/RELOJ-01.svg" alt=""></div>
+                                    <div class="col-md-10 col-xs-10">
+                                       <p class="texto-footer">Horario Corrido <br>Lunes a Viernes de <b>8AM - 5PM</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="id01" class="modal">
+                    <form class="modal-content animate" action="scont.php" method="post">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Cerrar Formulario">&times;</span>
+                        <div class="row contacto-header">
+                            <div class="col-md-12">
+                                <h3 class="subtitulo-blanco">Contáctanos</h3>    
+                            </div>
+                            <div class="col-md-12">
+                                <p class="texto-blanco">Siéntase libre de dejarnos su pregunta, le responderemos lo más breve posible.</p>
+                            </div>
+                        </div>
+                        <div class="contenedor">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input class="input-contacto" type="text" placeholder="Nombre y Apellido" name="nombre" required autofocus>
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="input-contacto" type="text" placeholder="E-mail" name="correo" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" placeholder="Pregunta" name="mensaje" class="input-contacto" required>
+                                </div>
+                            </div>
+                            <button class="btn-contacto" type="submit">ENVIAR</button>    
+                        </div>
+                    </form>
+                </div>
+            </footer>
+        </div>    
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
