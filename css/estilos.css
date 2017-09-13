@@ -181,7 +181,7 @@ a:hover, a:focus
 
 ::-webkit-scrollbar
 {
-	width: 10px;
+	width: 5px;
     background-color: #003c5a;
 }
 
@@ -1229,8 +1229,8 @@ span.psw {
     .texto-blanco-bold
     {
         width: 100%;
-        font-size: 25px;
-        border: 5px solid white;
+        font-size: 18px;
+        border: 2px solid white;
     }
     .texto-blanco-bold-2
     {
@@ -1547,14 +1547,15 @@ span.psw {
     {
         font-size: 30px;
         margin-bottom: -5%;
+        margin-top: 0%;
     }
     .img-subtitulo {
         width: 40%;
     }
     .texto-blanco 
     {
-        font-size: 25px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 100%;
         text-align: justify;
     }
     .texto
@@ -1597,7 +1598,7 @@ span.psw {
     #contacto .animate
     {
         overflow-y: scroll;
-        max-height: 60vh;
+        max-height: 100vh;
     }
     .contacto-btn
     {
@@ -1626,6 +1627,10 @@ span.psw {
     .contenedor-contacto
     {
         margin-top: 5%;
+    }
+    footer
+    {
+        position: initial;
     }
     .contacto-escritorio{display: none;}
     .contacto-phone{display: block;}
