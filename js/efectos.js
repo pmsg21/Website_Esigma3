@@ -69,6 +69,13 @@ function openNav2() {
 function closeNav2() {
     document.getElementById("mySidenav2").style.width = "0";
 }
+function openNav2P() {
+    document.getElementById("mySidenav2P").style.width = "220px";
+}
+
+function closeNav2P() {
+    document.getElementById("mySidenav2P").style.width = "0";
+}
 function openNav3() {
     document.getElementById("mySidenav3").style.width = "220px";
 }
